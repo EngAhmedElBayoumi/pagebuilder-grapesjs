@@ -1,0 +1,363 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ali Al Khajeh Development makes your dream come</title>
+    <!-- Stylesheets -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/icons.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/style-2.css' %}" />
+    <!-- <link rel="stylesheet" href="{% static 'css/style-rtl.css' %}" /> -->
+    <link
+      rel="shortcut icon"
+      href="images/New/logoIcon.png"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="images/New/logoIcon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/eb83386641.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--[if lt IE 9
+      ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
+    ><![endif]-->
+    <!--[if lt IE 9]><script src="{% static 'js/respond.js' %}"></script><![endif]-->
+    <script
+      src="https://kit.fontawesome.com/7ecf8dac4e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <!-- Preloader -->
+      
+
+      <!-- Sidenav Bar -->
+      <section class="sidenav-bar">
+        <div class="nav-box">
+          <div class="inner-box">
+            <div class="upper-box">
+              <div class="btn-box">
+                <button class="close-btn">
+                  <span class="fa fa-times"></span>
+                </button>
+              </div>
+            </div>
+
+            <!-- .Side Nav -->
+            <nav class="side-nav">
+              <ul class="navigation clearfix" id="nav">
+                <li class="current"><a href="index.html">Home</a></li>
+                <li class=""><a href="about.html">About</a></li>
+                <li class="dropdown">
+                  <a href="#">Projects</a>
+                  <ul>
+                    <li><a href="#">All Services</a></li>
+                  </ul>
+                </li>
+                <li class=""><a href="Blog.html">Blogs</a></li>
+                <li class=""><a href="jobs.html">Jobs</a></li>
+                <li class=""><a href="contactUs.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+
+      <header class="main-header header-style-two">
+        <div class="container">
+          <div class="topHeader">
+            <a href="#">العربية</a>
+            <a href="#" class="PhoneNumber"
+              ><img src="{% static 'images/New/PhoneHeader.svg' %}" /> +201015252525</a
+            >
+          </div>
+          <div class="HeaderCOntent">
+            <div class="main-box clearfix">
+              <div class="logo-box">
+                <div class="logo">
+                  <a href="index.html">
+                    <img src="{% static 'images/New/logo.svg' %}" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="nav-outer">
+                <!-- Main Menu -->
+                <nav class="main-menu navbar-expand-md navbar-light">
+                  <div
+                    class="collapse navbar-collapse clearfix"
+                    id="navbarSupportedContent"
+                  >
+                    <ul class="navigation clearfix">
+                      <li class="current"><a href="index.html">Home</a></li>
+                      <li class=""><a href="about.html">About</a></li>
+                      <li class="dropdown">
+                        <a href="#">Projects</a>
+
+                        <div class="Megamenu">
+                          <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                              <div class="ProjectIyemMenu">
+                                <div class="ImageProject">
+                                  <img src="{% static 'images/New/p_1.png' %}" />
+                                </div>
+                                <div class="ProjDatta">
+                                  <div class="forflex">
+                                    <div class="DewscoverProject">
+                                      <a href="projectdetails.html"
+                                        >Discover The Project
+                                        <img
+                                          src="{% static 'images/New/ButtonArrowWhiteRight.png' %}"
+                                      /></a>
+                                    </div>
+                                    <div class="MorDatat">
+                                      <h2>Lamar</h2>
+                                      <p>
+                                        Lamaara is a luxury residential project,
+                                        in the best lively location
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class=""><a href="Blog.html">Blogs</a></li>
+                      <li class=""><a href="jobs.html">Jobs</a></li>
+                      <li class=""><a href="contactUs.html">Contact</a></li>
+                    </ul>
+                  </div>
+                </nav>
+                <!-- Main Menu End-->
+
+                <div class="outer-box clearfix">
+                  <div class="Otherlogo">
+                    <div class="logo">
+                      <a href="index.html">
+                        <img src="{% static 'images/New/logo2.svg' %}" />
+                      </a>
+                    </div>
+                  </div>
+                  <!-- Btn box -->
+                  <div class="btn-box no-touch">
+                    <button class="nav-toggler"><span></span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="top-bg"></div>
+
+      <section class="find-out py-5">
+        <div class="container">
+          <div class="SecTitle text-center mb-5">
+            <h1 class="main-text fw-bold">Find out about our new jobs</h1>
+            <h5 class="text-black">
+              Our latest available jobs at Ali Al Khaja Company
+            </h5>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="find-my-card">
+                <div class="top">
+                  <div>
+                    <h5 class="fw-bold">Seif</h5>
+                    <h6>October</h6>
+                  </div>
+                  <i class="fa-solid fa-share main-text"></i>
+                </div>
+                <div class="body">
+                  <p class="text-black fw-bold mb-2">paragraph</p>
+                  <ul class="list-unstyled">
+                    <li class="my-list fw-bold mb-2">
+                      <i class="fa-solid fa-briefcase main-text"></i>
+                      <span class="fs-main px-1">Type of jop: Full time</span>
+                    </li>
+                    <li class="my-list fw-bold mb-2">
+                      <i class="fa-solid fa-money-bills main-text"></i>
+                      <span class="fs-main px-1"
+                        >Level: 3 years experience</span
+                      >
+                    </li>
+                    <li class="my-list fw-bold mb-2">
+                      <i class="fa-solid fa-comments-dollar main-text"></i>
+                      <span class="fs-main px-1">Salary: 2</span>
+                    </li>
+                    <li class="my-list fw-bold mb-2">
+                      <i class="fa-solid fa-clock main-text"></i>
+                      <span class="fs-main px-1">workingHours: 2</span>
+                    </li>
+                  </ul>
+                </div>
+                <button class="btn bg-main text-white fw-bolder w-100 my-2">
+                  Apply Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="Join-our-team py-5">
+        <div class="container">
+          <div class="join-content">
+            <h2 class="fw-bold mb-3">Join with our team</h2>
+            <p class="h4 mb-3">
+              Are you ready to embark on an exciting journey with us? We're
+              constantly on the lookout for talented individuals who are
+              passionate about making a difference. Explore our current job
+              openings below and take the first step towards a rewarding career
+              with us
+            </p>
+            <div class="contBTN">
+              <a href="#" class="theme-btn btn-style-two">
+                <span class="btn-title"
+                  >Show More
+                  <img
+                    class="animation_12"
+                    src="{% static 'images/New/ButtonArrowWhiteRight.png' %}"
+                /></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <!--Widgets Section-->
+        <div class="widgets-section">
+          <div class="auto-container">
+            <div class="row">
+              <!--Footer Column-->
+              <div class="footer-column col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                <div class="footer-widget about-widget">
+                  <h2 class="widget-title">About Us <span></span></h2>
+                  <div class="text">
+                    <p>
+                      A specialized real estate development company aiming to
+                      introduce a new concept in investment, luxurious living,
+                      and modern lifestyle, relying on expertise and commitment
+                      to quality.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--Footer Column-->
+              <div class="footer-column col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                <div class="footer-widget about-widget">
+                  <h2 class="widget-title">Address <span></span></h2>
+                  <ul class="UlLiData">
+                    <li>
+                      <a href="#"
+                        ><i class="bx bx-map"></i
+                        ><span
+                          >Block 26, Division North, Area C, Upper Plateau,
+                          Mokattam</span
+                        ></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!--Footer Column-->
+              <div class="footer-column col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                <div class="footer-widget about-widget">
+                  <h2 class="widget-title">ContactUs <span></span></h2>
+                  <ul class="UlLiData">
+                    <li>
+                      <a href="#"
+                        ><i class="fas fa-phone"></i
+                        ><span>+201015252525</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="bx bxs-envelope"></i
+                        ><span>info@alialkhajehdevelopment.com</span></a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="social-icon-two">
+                    <li>
+                      <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Footer Bottom-->
+        <div class="footer-bottom">
+          <div class="auto-container">
+            <div class="inner-container clearfix">
+              <!--
+                      <div class="footer-nav">
+                          <ul class="clearfix">
+                             <li><a href="#">Privacy Policy</a></li> 
+                             <li><a href="#">Contact</a></li> 
+                             <li><a href="#">Supplier</a></li>  
+                          </ul>
+                      </div>
+-->
+
+              <div class="copyright-text">
+                <p>© Ali AlKhajeh - علي الخاجه</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/owl.js' %}"></script>
+    <script src="{% static 'js/wow.js' %}"></script>
+    <script src="{% static 'js/appear.js' %}"></script>
+    <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+    <script src="{% static 'js/jquery.fancybox.js' %}"></script>
+    <script src="{% static 'js/mixitup.js' %}"></script>
+    <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+    <script src="{% static 'js/swiper.min.js' %}"></script>
+    <script src="{% static 'js/TweenMax.min.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>

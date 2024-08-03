@@ -1,0 +1,953 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ali Al Khajeh Development makes your dream come</title>
+    <!-- Stylesheets -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/icons.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/style-2.css' %}" />
+    <!-- <link rel="stylesheet" href="{% static 'css/style-rtl.css' %}" /> -->
+    <link
+      rel="shortcut icon"
+      href="images/New/logoIcon.png"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="images/New/logoIcon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <!--[if lt IE 9
+      ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
+    ><![endif]-->
+    <!--[if lt IE 9]><script src="{% static 'js/respond.js' %}"></script><![endif]-->
+    <script
+      src="https://kit.fontawesome.com/eb83386641.js"
+      crossorigin="anonymous"
+    ></script>
+    <style type="text/css">
+      .textarea{
+      width: 100%;
+      border-radius: 10px;
+      height: 100px;
+      }
+  </style>
+
+
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <!-- Preloader -->
+      
+
+      <!-- Sidenav Bar -->
+      <section class="sidenav-bar">
+        <div class="nav-box">
+          <div class="inner-box">
+            <div class="upper-box">
+              <div class="btn-box">
+                <button class="close-btn">
+                  <svg
+                    fill-rule="evenodd"
+                    viewBox="64 64 896 896"
+                    focusable="false"
+                    data-icon="close"
+                    width="20px"
+                    height="20px"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M799.86 166.31c.02 0 .04.02.08.06l57.69 57.7c.04.03.05.05.06.08a.12.12 0 010 .06c0 .03-.02.05-.06.09L569.93 512l287.7 287.7c.04.04.05.06.06.09a.12.12 0 010 .07c0 .02-.02.04-.06.08l-57.7 57.69c-.03.04-.05.05-.07.06a.12.12 0 01-.07 0c-.03 0-.05-.02-.09-.06L512 569.93l-287.7 287.7c-.04.04-.06.05-.09.06a.12.12 0 01-.07 0c-.02 0-.04-.02-.08-.06l-57.69-57.7c-.04-.03-.05-.05-.06-.07a.12.12 0 010-.07c0-.03.02-.05.06-.09L454.07 512l-287.7-287.7c-.04-.04-.05-.06-.06-.09a.12.12 0 010-.07c0-.02.02-.04.06-.08l57.7-57.69c.03-.04.05-.05.07-.06a.12.12 0 01.07 0c.03 0 .05.02.09.06L512 454.07l287.7-287.7c.04-.04.06-.05.09-.06a.12.12 0 01.07 0z"
+                    ></path>
+                  </svg>
+                </button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="129.23"
+                  height="25"
+                  viewBox="0 0 129.23 25"
+                  class="w-[150px] h-[43px] mx-3"
+                >
+                  <g transform="translate(-113.108 -88.316)">
+                    <g
+                      fill="#85754e"
+                      data-name="Group 92760"
+                      transform="translate(141.401 94.41)"
+                    >
+                      <path
+                        d="M25.542 155.9l-.037-.1H25.1l-2.139 5.855h-.742v.434h2.011v-.434h-.81l.715-1.954h1.622l.715 1.954h-.811v.434h2.75v-.434h-.754zm.051 3.364H24.3l.648-1.769.648 1.769z"
+                        data-name="Path 71957"
+                        transform="translate(-22.217 -155.796)"
+                      ></path>
+                      <path
+                        d="M50.517 160.3a2.662 2.662 0 01-.543 1.158 1.241 1.241 0 01-.978.4h-1.255v-5.278h.879v-.434h-2.86v.434h.879v5.278h-.879v.434h5.151v-2.111h-.362l-.03.122z"
+                        data-name="Path 71958"
+                        transform="translate(-36.194 -156.004)"
+                      ></path>
+                      <path
+                        d="M67.669 156.58h.879v5.278h-.879v.434h2.86v-.434h-.879v-5.278h.879v-.434h-2.86z"
+                        data-name="Path 71959"
+                        transform="translate(-48.199 -156.004)"
+                      ></path>
+                      <path
+                        d="M90.667 155.9l-.041-.1h-.4l-2.139 5.855h-.745v.434h2.013v-.434h-.81l.715-1.954h1.625l.715 1.954h-.812v.434h2.749v-.434h-.752l-2.118-5.755zm.051 3.364h-1.295l.648-1.769.648 1.769z"
+                        data-name="Path 71960"
+                        transform="translate(-59.391 -155.796)"
+                      ></path>
+                      <path
+                        d="M115.641 160.3a2.63 2.63 0 01-.543 1.158 1.24 1.24 0 01-.978.4h-1.255v-5.278h.879v-.434h-2.86v.434h.879v5.278h-.879v.434h5.151v-2.111h-.362l-.03.122z"
+                        data-name="Path 71961"
+                        transform="translate(-72.853 -156.004)"
+                      ></path>
+                      <path
+                        d="M135.384 158.627l1.869-2.047H138v-.434h-1.95v.434h.618l-1.957 2.129v-2.129h.816v-.434h-2.8v.434h.882v5.278h-.88v.434h2.8v-.434h-.816V159.5l1.95 2.357h-.532v.434h2.6v-.434h-.609z"
+                        data-name="Path 71962"
+                        transform="translate(-85.305 -156.004)"
+                      ></path>
+                      <path
+                        d="M159.107 156.58h.879v2.356h-2.329v-2.356h.88v-.434h-2.86v.434h.879v5.278h-.879v.434h2.86v-.434h-.88v-2.487h2.329v2.487h-.879v.434h2.86v-.434h-.881v-5.278h.88v-.434h-2.86z"
+                        data-name="Path 71963"
+                        transform="translate(-98.396 -156.004)"
+                      ></path>
+                      <path
+                        d="M182.777 155.9l-.037-.1h-.406l-2.139 5.855h-.745v.434h2.013v-.434h-.811l.715-1.954h1.625l.715 1.954h-.807v.434h2.75v-.434h-.752l-2.117-5.752zm.051 3.364h-1.295l.648-1.769.648 1.769z"
+                        data-name="Path 71964"
+                        transform="translate(-111.969 -155.796)"
+                      ></path>
+                      <path
+                        d="M203.513 156.58h.88v4.763a.842.842 0 01-.107.515.3.3 0 01-.254.119.329.329 0 01-.2-.05c-.01-.008-.041-.029-.041-.135a.454.454 0 01.016-.137c.017-.055.031-.1.046-.134s.031-.087.048-.131a.6.6 0 00.033-.21.551.551 0 00-.027-.162.5.5 0 00-.093-.174.53.53 0 00-.172-.135.585.585 0 00-.267-.057.646.646 0 00-.51.2.731.731 0 00-.175.5.9.9 0 00.113.448 1.046 1.046 0 00.292.331 1.323 1.323 0 00.422.2 1.878 1.878 0 00.508.068 1.537 1.537 0 00.685-.143 1.239 1.239 0 00.466-.4 1.633 1.633 0 00.246-.572 3.037 3.037 0 00.071-.666v-4.05h.88v-.434h-2.86v.434z"
+                        data-name="Path 71965"
+                        transform="translate(-125.348 -156.004)"
+                      ></path>
+                      <path
+                        d="M225.262 160.32a2.813 2.813 0 01-.105.447 1.835 1.835 0 01-.248.508 1.553 1.553 0 01-.429.416 1.142 1.142 0 01-.641.168H222.5v-2.634h.488a.791.791 0 01.389.084.645.645 0 01.229.221 1.335 1.335 0 01.148.35c.034.123.07.268.114.453l.028.122h.363v-2.865h-.359l-.03.122a4.528 4.528 0 01-.171.58.921.921 0 01-.188.315.52.52 0 01-.244.143 1.59 1.59 0 01-.406.042h-.361v-2.209h1.159a1.552 1.552 0 01.5.072.892.892 0 01.338.213 1.351 1.351 0 01.255.368 4.02 4.02 0 01.212.537l.034.11h.355v-1.736h-4.843v.434h.879v5.278h-.879v.434h5.142v-2.111h-.377l-.017.139z"
+                        data-name="Path 71966"
+                        transform="translate(-134.896 -156.005)"
+                      ></path>
+                      <path
+                        d="M249.027 156.58v-.434h-2.86v.434h.879v2.356h-2.329v-2.356h.88v-.434h-2.86v.434h.879v5.278h-.879v.434h2.86v-.434h-.88v-2.487h2.329v2.487h-.879v.434h2.86v-.434h-.879v-5.278z"
+                        data-name="Path 71967"
+                        transform="translate(-148.09 -156.004)"
+                      ></path>
+                    </g>
+                    <g
+                      data-name="Group 92761"
+                      transform="translate(113.108 88.316)"
+                    >
+                      <path
+                        d="M139.923 88.676l-.349-.18-.352-.181-.352.181-.349.18.127 5.034.464 18.228.039.618.071.76.071-.76.039-.618.464-18.228.127-5.034z"
+                        data-name="Path 71968"
+                        transform="translate(-128.018 -88.316)"
+                      ></path>
+                      <path
+                        fill="#85754e"
+                        d="M117.869 95.872l-.036-.1h-.491l-3.159 8.377h-1.074v.467h2.819v-.467H114.7l2.367-6.24 2.365 6.24H118.2v.467h3.907v-.467h-1.089z"
+                        data-name="Path 71969"
+                        transform="translate(-113.108 -92.693)"
+                      ></path>
+                      <path
+                        fill="#85754e"
+                        d="M150.359 95.874l-.038-.1h-.491l-3.182 8.377h-1.088v.467h3.907v-.467h-1.23l2.365-6.24 2.367 6.24h-1.232v.467h2.819v-.467h-1.074z"
+                        data-name="Path 71970"
+                        transform="translate(-132.149 -92.693)"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+
+            <!-- .Side Nav -->
+            <nav class="side-nav">
+              <ul class="list-unstyled list-nav">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="about.html">Projects</a>
+                </li>
+                <li>
+                  <a href="Blog.html">Blogs</a>
+                </li>
+                <li>
+                  <a href="contactUs.html">Contact</a>
+                </li>
+              </ul>
+
+              <ul class="list-unstyled links">
+                <li>
+                  <i class="fa-solid fa-phone-flip mx-2"></i>
+                  <span>+201122355444</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope mx-2"></i>
+                  <span>ali@alialkhajeh.ae</span>
+                </li>
+                <li class="start">
+                  <i class="fa-solid fa-clock mx-2"></i>
+                  <span
+                    >Sunday - friday 9 <br />
+                    AM - 6PM</span
+                  >
+                </li>
+                <li class="start">
+                  <i class="fa-solid fa-location-dot mx-2"></i>
+                  <span>Abu Dhabi, Aljazira Club, Tower A, 14th Floor</span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <!--End Sidenav Bar -->
+
+      <!-- Start Main Content -->
+      <main id="content">
+        <!-- Main Header-->
+        <header class="main-header header-style-two">
+          <div class="container">
+            <div class="topHeader">
+              <a href="#">العربية</a>
+              <a href="#" class="PhoneNumber"
+                ><img src="{% static 'images/New/PhoneHeader.svg' %}" /> +201015252525</a
+              >
+            </div>
+            <div class="HeaderCOntent">
+              <div class="main-box clearfix">
+                <div class="logo-box">
+                  <div class="logo">
+                    <a href="index.html">
+                      <img src="{% static 'images/New/logo.svg' %}" />
+                    </a>
+                  </div>
+                </div>
+
+                <div class="nav-outer">
+                  <!-- Main Menu -->
+                  <nav class="main-menu navbar-expand-md navbar-light">
+                    <div
+                      class="collapse navbar-collapse clearfix"
+                      id="navbarSupportedContent"
+                    >
+                      <ul class="navigation clearfix my-nav">
+                        <li class="current"><a href="index.html">Home</a></li>
+                        <li class=""><a href="about.html">About</a></li>
+                        <li class="dropdown">
+                          <a href="#">Projects</a>
+
+                          <div class="Megamenu">
+                            <div class="row">
+                              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                <div class="ProjectIyemMenu">
+                                  <div class="ImageProject">
+                                    <img src="{% static 'images/New/p_1.png' %}" />
+                                  </div>
+                                  <div class="ProjDatta">
+                                    <div class="forflex">
+                                      <div class="DewscoverProject">
+                                        <a href="projectdetails.html"
+                                          >Discover The Project
+                                          <img
+                                            src="{% static 'images/New/ButtonArrowWhiteRight.png' %}"
+                                        /></a>
+                                      </div>
+                                      <div class="MorDatat">
+                                        <h2>Lamar</h2>
+                                        <p>
+                                          Lamaara is a luxury residential
+                                          project, in the best lively location
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class=""><a href="Blog.html">Blogs</a></li>
+                        <li class=""><a href="jobs.html">Jobs</a></li>
+                        <li class=""><a href="contactUs.html">Contact</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+                  <!-- Main Menu End-->
+
+                  <div class="outer-box">
+                    <div class="Otherlogo">
+                      <div class="logo">
+                        <a href="index.html">
+                          <img src="{% static 'images/New/logo2.svg' %}" />
+                        </a>
+                      </div>
+                    </div>
+                    <!-- Btn box -->
+                    <div class="btn-box no-touch">
+                      <button class="nav-toggler"><span></span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!--End Main Header -->
+
+        <!-- Banner Section -->
+        <section class="banner-section-two">
+          <div class="banner-carousel owl-carousel owl-theme" >
+            <!-- Slide Item -->
+            <div
+              class="slide-item"
+              style="background-image: url({% static 'images/New/Baner_1.png' %})"
+            >
+              <div class="content-box">
+                <div class="content">
+                  <div class="auto-container">
+                    <h2>family .. investment .. future</h2>
+                    <div class="text">
+                      Ali Al Khajeh Development makes your dream come true and
+                      ventures beyond imagination with contemporary living
+                      spaces that unite family and friends, and foster the
+                      spirit of the family. Our offerings adhere to the highest
+                      global standards, that meet the aspirations of customers
+                      in a way that exceeds expectations
+                    </div>
+                    <div class="btn-box">
+                      <a href="#" class="theme-btn btn-style-two"
+                        ><span class="btn-title">Contact Us</span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--END Banner Section -->
+
+        <div class="AboutUs">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <div class="AboutUImage">
+                  <img src="{% static 'images/New/aboutUs.png' %}" />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                <div class="AboutUsDatta">
+                  <div class="forflex">
+                    <a href="#">
+                      <h2>
+                        We innovate to be your top choice, fulfilling your
+                        dreams with a home that is ready for the future.
+                      </h2>
+                    </a>
+                    <p>
+                      At "Al Khajeh Development," nothing is left to chance. We
+                      provide our clients with a comprehensive experience of
+                      creativity and innovation, blending modern living with
+                      fresh ideas in property development. We adhere to the
+                      highest standards of quality in construction, finishing,
+                      and customer service. We firmly believe that striving for
+                      excellence in all facets of our work is key to success,
+                      from the raw materials we use to the highest level of
+                      professionalism in execution, all to deliver exceptional
+                      value deserving of our clients.
+                    </p>
+                    <div class="contBTN">
+                      <a href="#" class="theme-btn btn-style-two">
+                        <span class="btn-title"
+                          >Show More
+                          <img
+                            class="animation_12"
+                            src="{% static 'images/New/ButtonArrowWhiteRight.png' %}"
+                        /></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="OurProjects">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="ProjectDatta">
+                  <h1>Our Projects</h1>
+                  <h2>
+                    Lamaara at Maadi,, a world of luxury and upscale living.
+                  </h2>
+                  <div class="Desc">
+                    <p>
+                      In “Lamaara Maadi”, you will have a renewed encounter with
+                      a world of inspiration and sophisticated and unique life,
+                      and in “Lamaara” you will not only be satisfied with
+                      housing, but you will find all the enjoyment of the luxury
+                      atmosphere, and a community that enhances the feeling of
+                      belonging, and opens its arms to achieve the maximum
+                      levels of social interaction and achieve an experience
+                      Exceptional living, and the lifestyle you deserve, offered
+                      to you by the Lamaara Al Maadi project that takes you to
+                      discover the perfect place for your home.
+                    </p>
+                  </div>
+                  <div class="featuresProject">
+                    <ul>
+                      <li>
+                        <p>
+                          <img src="{% static 'images/New/Location_Icon_Dark.svg' %}" /> Cairo
+                          - Zahraa El-Maadi
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <img src="{% static 'images/New/LandArea.svg' %}" /> Land Area 500 KM
+                          sq.
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <img src="{% static 'images/New/Parking_Area.svg' %}" /> Parking Area
+                          200 KM sq.
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <img src="{% static 'images/New/Builders.svg' %}" /> 122 Buildings
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="contBTN">
+                    <a href="#" class="theme-btn btn-style-two">
+                      <span class="btn-title"
+                        >Browse Project
+                        <img
+                          class="animation_12"
+                          src="{% static 'images/New/ButtonArrowWhiteRight.png' %}"
+                      /></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="ProjectGarrayImage">
+                  <div class="project-single-carousel owl-carousel owl-theme" >
+                    <!-- Slide Item -->
+                    <div class="slide-item">
+                      <figure class="image">
+                        <a
+                          href="images/New/p1_1.png"
+                          class="lightbox-image"
+                          data-fancybox="images"
+                          ><img src="{% static 'images/New/p1_1.png' %}" alt=""
+                        /></a>
+                      </figure>
+                    </div>
+
+                    <!-- Slide Item -->
+                    <div class="slide-item">
+                      <figure class="image">
+                        <a
+                          href="images/New/p1_2.png"
+                          class="lightbox-image"
+                          data-fancybox="images"
+                          ><img src="{% static 'images/New/p1_2.png' %}" alt=""
+                        /></a>
+                      </figure>
+                    </div>
+
+                    <!-- Slide Item -->
+                    <div class="slide-item">
+                      <figure class="image">
+                        <a
+                          href="images/New/p1_3.png"
+                          class="lightbox-image"
+                          data-fancybox="images"
+                          ><img src="{% static 'images/New/p1_3.png' %}" alt=""
+                        /></a>
+                      </figure>
+                    </div>
+
+                    <!-- Slide Item -->
+                    <div class="slide-item">
+                      <figure class="image">
+                        <a
+                          href="images/New/p1_4.png"
+                          class="lightbox-image"
+                          data-fancybox="images"
+                          ><img src="{% static 'images/New/p1_4.png' %}" alt=""
+                        /></a>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="OurBlogs">
+          <div class="container">
+            <div class="SecTitle">
+              <a href="#"><h2>Our Blogs</h2></a>
+            </div>
+            <div class="BlogsItems">
+              <div class="row">
+                <div class="blogss-carousel owl-carousel owl-theme">
+                  <div class="col-lg-12">
+                    <div class="blogItem">
+                      <a href="#" class="UperBox">
+                        <div class="ImageBlog">
+                          <img src="{% static 'images/New/blog_1.png' %}" />
+                        </div>
+                        <div class="BlogDate">
+                          <span>21 Dec 2023</span>
+                        </div>
+                      </a>
+                      <div class="dowenBox">
+                        <div class="tititileShare">
+                          <h2>Apartments for sale in Maadi</h2>
+                          <div class="square-menu">
+                            <div class="items-wrapper">
+                              <a href="#" class="menu-item"
+                                ><span class="bx bxs-phone"></span
+                              ></a>
+                              <a href="#" class="menu-item"
+                                ><span class="bx bxl-whatsapp"></span
+                              ></a>
+                              <a href="#" class="menu-item"
+                                ><span class="bx bxl-instagram"></span
+                              ></a>
+                              <a href="#" class="menu-item"
+                                ><span class="bx bxl-twitter"></span
+                              ></a>
+                            </div>
+                            <button class="floating-btn" type="button">
+                              <i class="fa fa-share"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="Desc"></div>
+                        <div class="ShowMore">
+                          <a href="#"
+                            >Show More
+                            <img
+                              class="animation_12"
+                              src="{% static 'images/icons/ButtonArrowWhiteRight.webp' %}"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                    <div class="blogItem">
+                      <a href="#" class="UperBox">
+                        <div class="ImageBlog">
+                          <img src="{% static 'images/New/blog_2.png' %}" />
+                        </div>
+                        <div class="BlogDate">
+                          <span>10 Mar 2024</span>
+                        </div>
+                      </a>
+                      <div class="dowenBox">
+                        <div class="tititileShare">
+                          <h2>
+                            The best places for real estate for sale in Cairo
+                          </h2>
+                          <div class="square-menu">
+                            <div class="items-wrapper">
+                              <a href="#" class="menu-item"
+                                ><span class="bx bxs-phone"></span
+                              ></a>
+                              <a href="#" class="menu-item"
+                                ><span class="bx bxl-whatsapp"></span
+                              ></a>
+                              <a href="#" class="menu-item"
+                                ><span class="bx bxl-instagram"></span
+                              ></a>
+                              <a href="#" class="menu-item"
+                                ><span class="bx bxl-twitter"></span
+                              ></a>
+                            </div>
+                            <button class="floating-btn" type="button">
+                              <i class="fa fa-share"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="Desc">
+                          <p>
+                            It is normal to find an increase in demand for
+                            properties for sale in Cairo day after day. Who
+                            among us does not have the desire to live or even
+                            invest in real estate in Cairo
+                          </p>
+                        </div>
+                        <div class="ShowMore">
+                          <a href="#"
+                            >Show More
+                            <img
+                              class="animation_12"
+                              src="{% static 'images/New/ButtonArrowRight.png' %}"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                    <div class="blogItem">
+                      <a href="#" class="UperBox">
+                        <div class="ImageBlog">
+                          <img src="{% static 'images/New/blog_3.png' %}" />
+                        </div>
+                        <div class="BlogDate">
+                          <span>10 Mar 2024</span>
+                        </div>
+                      </a>
+                      <div class="dowenBox">
+                        <div class="tititileShare">
+                          <h2>A compound in Maadi in installments</h2>
+                          <div class="square-menu">
+                            <div class="items-wrapper">
+                              <a href="#" class="menu-item"
+                                ><span class="bx bxs-phone"></span
+                              ></a>
+                              <a href="#" class="menu-item"
+                                ><span class="bx bxl-whatsapp"></span
+                              ></a>
+                              <a href="#" class="menu-item"
+                                ><span class="bx bxl-instagram"></span
+                              ></a>
+                              <a href="#" class="menu-item"
+                                ><span class="bx bxl-twitter"></span
+                              ></a>
+                            </div>
+                            <button class="floating-btn" type="button">
+                              <i class="fa fa-share"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="Desc"></div>
+                        <div class="ShowMore">
+                          <a href="#"
+                            >Show More
+                            <img
+                              class="animation_12"
+                              src="{% static 'images/New/ButtonArrowRight.png' %}"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="btn-box w-max m-auto">
+              <a href="#" class="theme-btn btn-style-three"
+                ><span class="btn-title"
+                  >Show More
+                  <img
+                    class="animation_12"
+                    src="{% static 'images/New/ButtonArrowRight.png' %}" /></span
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="JoinOurTeam">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7 col-md-7 col-sm-7 col-sx-12">
+                <div class="JoinOurTeamDtat">
+                  <div class="forflex">
+                    <h2>Join our team</h2>
+                    <p>
+                      Ali Al Khajeh Real Estate Development Company boasts a
+                      comprehensive team of experts in all areas related to real
+                      estate development. We are always pleased to welcome you
+                      to our team in a variety of available positions.
+                    </p>
+                    <div class="contBTN">
+                      <a href="#" class="theme-btn btn-style-two">
+                        <span class="btn-title"
+                          >Apply Now
+                          <img
+                            class="animation_12"
+                            src="{% static 'images/New/ButtonArrowWhiteRight.png' %}"
+                        /></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <div class="JoinOurTeamImage">
+                  <img src="{% static 'images/New/team.png' %}" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contactUs">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="contctDtata">
+                <div class="forflexx">
+                  <h2>Contact us</h2>
+                  <p>
+                    Everything you dream of and aspire to, all your wishes for
+                    your family and a bright future are embraced under one roof.
+                    At our place, we promise you an experience that touches your
+                    dreams
+                  </p>
+                  <div class="COnatcInfos">
+                    <ul>
+                      <li>
+                        <a
+                          ><img src="{% static 'images/New/Phone_Dark.svg' %}" />
+                          +201015252525</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          ><img src="{% static 'images/New/mail.svg' %}" />
+                          ali@alialkhajeh.ae</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          ><img src="{% static 'images/New/clock.svg' %}" />
+                          Saturday-thursday</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          ><img src="{% static 'images/New/LocationDark.svg' %}" /> Block 26,
+                          Division North, Area C, Upper Plateau, Mokattam</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="contactFormCOnt">
+                <h2>Contact US</h2>
+                <div class="FormCOnt">
+                  <form action="#" method="post">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Full Name"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <input
+                            type="mail"
+                            class="form-control"
+                            placeholder="Email Address"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <input
+                            type="number"
+                            class="form-control"
+                            placeholder="Phone Number"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <!---text area here-->
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <button type="submit" class="theme-btn btn-style-two">
+                            <span class="btn-title">Send Now</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Footer -->
+        <footer class="main-footer">
+          <!--Widgets Section-->
+          <div class="widgets-section">
+            <div class="auto-container">
+              <div class="row">
+                <!--Footer Column-->
+                <div class="footer-column col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="footer-widget about-widget">
+                    <h2 class="widget-title">About Us <span></span></h2>
+                    <div class="text">
+                      <p>
+                        A specialized real estate development company aiming to
+                        introduce a new concept in investment, luxurious living,
+                        and modern lifestyle, relying on expertise and
+                        commitment to quality.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Footer Column-->
+                <div class="footer-column col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="footer-widget about-widget">
+                    <h2 class="widget-title">Address <span></span></h2>
+                    <ul class="UlLiData">
+                      <li>
+                        <a href="#"
+                          ><i class="bx bx-map"></i
+                          ><span
+                            >Block 26, Division North, Area C, Upper Plateau,
+                            Mokattam</span
+                          ></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!--Footer Column-->
+                <div class="footer-column col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="footer-widget about-widget">
+                    <h2 class="widget-title">ContactUs <span></span></h2>
+                    <ul class="UlLiData">
+                      <li>
+                        <a href="#"
+                          ><i class="fas fa-phone"></i
+                          ><span>+201015252525</span></a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="bx bxs-envelope"></i
+                          ><span>info@alialkhajehdevelopment.com</span></a
+                        >
+                      </li>
+                    </ul>
+                    <ul class="social-icon-two">
+                      <li>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Footer Bottom-->
+          <div class="footer-bottom">
+            <div class="auto-container">
+              <div class="inner-container clearfix">
+                <!--
+                        <div class="footer-nav">
+                            <ul class="clearfix">
+                               <li><a href="#">Privacy Policy</a></li> 
+                               <li><a href="#">Contact</a></li> 
+                               <li><a href="#">Supplier</a></li>  
+                            </ul>
+                        </div>
+-->
+
+                <div class="copyright-text">
+                  <p>© Ali AlKhajeh - علي الخاجه</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- End Footer -->
+      </main>
+      <!-- End Main Content -->
+    </div>
+
+    <!-- Scroll To Top -->
+    <div class="scroll-to-top scroll-to-target" data-target="html">
+      <span class="fa fa-angle-up"></span>
+    </div>
+
+    <!-- Social Links -->
+    <div class="COntactIcons">
+      <div class="square-menu">
+        <div class="items-wrapper">
+          <a href="#" class="menu-item"><span class="bx bxs-phone"></span></a>
+          <a href="#" class="menu-item"
+            ><span class="bx bxl-whatsapp"></span
+          ></a>
+          <a href="#" class="menu-item"><span class=""></span></a>
+        </div>
+        <button class="floating-btn" type="button">
+          <i class="fa fa-phone-alt"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/owl.js' %}"></script>
+    <script src="{% static 'js/wow.js' %}"></script>
+    <script src="{% static 'js/appear.js' %}"></script>
+    <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+    <script src="{% static 'js/jquery.fancybox.js' %}"></script>
+    <script src="{% static 'js/mixitup.js' %}"></script>
+    <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+    <script src="{% static 'js/swiper.min.js' %}"></script>
+    <script src="{% static 'js/TweenMax.min.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+    <script src="{% static 'js/admin.js' %}"></script>
+  </body>
+</html>

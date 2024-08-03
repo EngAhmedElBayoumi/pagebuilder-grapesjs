@@ -1,0 +1,154 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{{ page.seo_title_ar|default:page.title_ar }}</title>
+    <meta name="description" content="{{ page.meta_description_ar }}">
+    <meta name="keywords" content="{{ page.meta_keywords_ar }}">
+    <link rel="canonical" href="{{ page.canonical_url|default:request.build_absolute_uri }}">
+    <meta property="og:title" content="{{ page.og_title_ar|default:page.title_ar }}">
+    <meta property="og:description" content="{{ page.og_description_ar|default:page.meta_description_ar }}">
+    {% if page.og_image %}
+    <meta property="og:image" content="{{ page.og_image.url }}">
+    {% endif %}
+    <meta property="og:url" content="{{ request.build_absolute_uri }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.twitter_card_ar|default:page.title_ar }}">
+    <meta name="twitter:description" content="{{ page.og_description_ar|default:page.meta_description_ar }}">
+    
+    {% if page.og_image %}
+    <meta name="twitter:image" content="{{ page.og_image.url }}">
+    {% endif %}
+    <!--favicon-->
+    {% if page.favicon %}
+    <link rel="shortcut icon" href="{{ page.favicon.url }}" type="image/x-icon">
+    {% endif %}   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <link rel="alternate" href="URL" hreflang="en">
+    <link rel="alternate" href="URL" hreflang="ar">
+    
+    <style type="text/css">
+        .textarea{
+        width: 100%;
+        border-radius: 10px;
+        height: 100px;
+        /** placeholder padding **/
+        padding: 10px;
+        /** placeholder color **/
+        color: black;
+        }
+        .alert{
+           position: fixed !important;
+           top: 10px;
+           right: 10px;
+           z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+           background-color: rgba(255, 255, 255, 0.8);
+           border-radius: 10px;
+           padding: 10px;
+           width: 300px;
+        }
+        .alert-success{
+            color: green;
+            position: fixed !important;
+            display: flex;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="preloader"></div>
+   <!---django message with close button--> 
+
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                {{ message }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        {% endfor %}
+    {% endif %}
+    <!---end django message with close button-->
+
+
+    {{page_content}}
+
+
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get elementBlock by id 'carouseltesting'
+            var elementBlock = document.getElementById('carouseltesting');
+            // Add class to elementBlock 'owl-carousel owl-theme'
+            elementBlock.classList.add('owl-carousel', 'owl-theme');
+
+            // Initialize the carousel
+            $(elementBlock).owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 10,
+                nav: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true
+            });
+        });
+        function changeLanguage(lang_code) {
+            // get url from window.location
+            var url = window.location.href;
+            console.log("url",url);
+
+            // remove domain from url
+            url = url.replace(window.location.origin, '');
+            console.log("url",url);
+            console.log("lang_code",lang_code);
+            // check if lang_code is 'en' add en/ before url 
+            if (lang_code == 'en') {
+                url = '/en' + url;
+                console.log(" en url",url);
+            } else {
+                url = url.replace('/en', '');
+                console.log("ar url",url);
+            }
+            // redirect to new url
+            window.location.href = url;
+            
+                
+        }
+
+      </script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "{{ page.seo_title_ar|default:page.title_ar }}",
+            "description": "{{ page.meta_description_ar }}",
+            "url": "{{ request.build_absolute_uri }}"
+        }
+    </script>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/owl.js' %}"></script>
+    <script src="{% static 'js/wow.js' %}"></script>
+    <script src="{% static 'js/appear.js' %}"></script>
+    <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+    <script src="{% static 'js/jquery.fancybox.js' %}"></script>
+    <script src="{% static 'js/mixitup.js' %}"></script>
+    <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+    <script src="{% static 'js/swiper.min.js' %}"></script>
+    <script src="{% static 'js/TweenMax.min.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+    
+
+
+</body>
+    
